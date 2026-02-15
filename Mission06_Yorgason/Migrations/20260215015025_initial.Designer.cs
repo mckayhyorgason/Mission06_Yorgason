@@ -10,7 +10,7 @@ using Mission06_Yorgason.Models;
 namespace Mission06_Yorgason.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20260215013831_initial")]
+    [Migration("20260215015025_initial")]
     partial class initial
     {
         /// <inheritdoc />
