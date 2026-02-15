@@ -6,6 +6,13 @@ namespace Mission06_Yorgason.Controllers;
 
 public class HomeController : Controller
 {
+    private MovieContext _context;
+    
+    public HomeController(MovieContext someName)
+    {
+        _context = someName;
+    }
+    
     public IActionResult Index()
     {
         return View();
@@ -25,6 +32,10 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult MovieForm(MovieInfo movie)
     {
+        _context.MovieList.Add(movie); // add record to database
+        _context.SaveChanges();
+        
+        
         return View();
     }
 
