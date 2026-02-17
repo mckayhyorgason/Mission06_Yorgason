@@ -94,7 +94,6 @@
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/Mission06_Yorgason.pdb
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/Mission06_Yorgason.genruntimeconfig.cache
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/ref/Mission06_Yorgason.dll
-/Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/compressed/u2ri6ypiaa-{0}-kzgp8h9ugi-kzgp8h9ugi.gz
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/bin/Debug/net10.0/Humanizer.dll
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/bin/Debug/net10.0/Microsoft.Build.Framework.dll
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
@@ -213,3 +212,4 @@
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/Mission06_Yorgason.csproj.AssemblyReference.cache
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/Mission06_Yorgason.sourcelink.json
 /Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/Mission0.56679DEE.Up2Date
+/Users/mckayyorgason/Desktop/BYU Classes Winter 2026/Enterprise Application Development/Mission Assignments/Mission06_Yorgason/Mission06_Yorgason/obj/Debug/net10.0/compressed/u2ri6ypiaa-{0}-kacaghrz8v-kacaghrz8v.gz
