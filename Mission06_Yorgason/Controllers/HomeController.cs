@@ -36,7 +36,7 @@ public class HomeController : Controller
         _context.SaveChanges();
         
         
-        return View();
+        return View("MovieForm");
     }
 
 }
