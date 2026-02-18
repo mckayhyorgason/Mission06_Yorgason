@@ -32,11 +32,23 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult MovieForm(MovieInfo movie)
     {
-        _context.MovieList.Add(movie); // add record to database
-        _context.SaveChanges();
-        
-        
-        return View("MovieForm");
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                _context.MovieList.Add(movie);
+                _context.SaveChanges();
+
+                return RedirectToAction("MovieForm"); // Redirect to empty form
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                ModelState.AddModelError("", "Something went wrong while saving. Please try again.");
+            }
+        }
+
+        return View(movie);
     }
 
 }
