@@ -51,4 +51,12 @@ public class HomeController : Controller
         return View(movie);
     }
 
+    public IActionResult MovieList()
+    {
+        var movieItem = _context.MovieList
+            .ToList();
+        
+        return View(movieItem);
+    }
+
 }
