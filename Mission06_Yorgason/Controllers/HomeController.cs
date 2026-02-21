@@ -36,7 +36,7 @@ public class HomeController : Controller
         {
             try
             {
-                _context.MovieList.Add(movie);
+                _context.Movies.Add(movie);
                 _context.SaveChanges();
 
                 return RedirectToAction("MovieForm"); // Redirect to empty form
@@ -53,7 +53,7 @@ public class HomeController : Controller
 
     public IActionResult MovieList()
     {
-        var movieItem = _context.MovieList
+        var movieItem = _context.Movies
             .ToList();
         
         return View(movieItem);
