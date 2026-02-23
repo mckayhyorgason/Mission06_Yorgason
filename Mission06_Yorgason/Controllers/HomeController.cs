@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Mission06_Yorgason.Models;
 
 namespace Mission06_Yorgason.Controllers;
@@ -26,6 +27,8 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult MovieForm()
     {
+        ViewBag.Categories = _context.Categories.ToList();
+        
         return View();
     }
 
@@ -54,9 +57,21 @@ public class HomeController : Controller
     public IActionResult MovieList()
     {
         var movieItem = _context.Movies
+            .Include(x => x.Category)
             .ToList();
         
         return View(movieItem);
+    }
+
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var movieToEdit = _context.Movies
+            .Single(x => x.MovieId == id);
+        
+        ViewBag.Categories = _context.Categories.ToList();
+        
+        return View("MovieForm",  movieToEdit);
     }
 
 }
