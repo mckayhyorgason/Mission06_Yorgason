@@ -51,6 +51,7 @@ public class HomeController : Controller
             }
         }
 
+        ViewBag.Categories = _context.Categories.ToList();
         return View(movie);
     }
 
@@ -72,6 +73,15 @@ public class HomeController : Controller
         ViewBag.Categories = _context.Categories.ToList();
         
         return View("MovieForm",  movieToEdit);
+    }
+
+    [HttpPost]
+    public IActionResult Edit(MovieInfo updatedMovie)
+    {
+        _context.Update(updatedMovie);
+        _context.SaveChanges();
+        
+        return RedirectToAction("MovieList");
     }
 
 }

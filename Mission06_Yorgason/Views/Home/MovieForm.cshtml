@@ -9,8 +9,11 @@
     
     <form method="post" class="movie-form">
 
-        <label asp-for="Category">Category:</label>
-        <select asp-for="Category">Category
+        <input type="hidden" asp-for="MovieId">
+        
+
+        <label asp-for="CategoryId">Category:</label>
+        <select asp-for="CategoryId">
             <option value="">Select a Category</option>
             @foreach (Category c in ViewBag.Categories)
             {
@@ -61,6 +64,6 @@
         <input asp-for="Notes">
         <br>
 
-        <button type="submit">Add Movie</button>
+        <button type="submit">Submit</button>
     </form>
 </div>
