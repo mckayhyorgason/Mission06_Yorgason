@@ -49,6 +49,7 @@
             <option value="true">Yes</option>
             <option value="false">No</option>
         </select>
+        <span asp-validation-for="Edited" class="text-danger"></span>
         <br>
         <label asp-for="LentTo">Lent To:</label>
         <input asp-for="LentTo">
@@ -59,6 +60,7 @@
             <option value="true">Yes</option>
             <option value="false">No</option>
         </select>
+        <span asp-validation-for="CopiedToPlex" class="text-danger"></span>
         <br>
         <label asp-for="Notes">Notes:</label>
         <input asp-for="Notes">

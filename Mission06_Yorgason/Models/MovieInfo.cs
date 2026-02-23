@@ -14,13 +14,14 @@ public class MovieInfo
     [Required(ErrorMessage = "Title is required.")]
     public string Title { get; set; }
     [Range(1888, 2100, ErrorMessage = "Enter a valid year.")]
-    public int Year { get; set; }
+    public int Year { get; set; } = 0;
     public string? Director { get; set; }
     public string? Rating { get; set; }
     [Required(ErrorMessage = "Edited is required.")]
-    public bool Edited { get; set; }
+    public bool? Edited { get; set; }
     public string? LentTo { get; set; }
-    public bool CopiedToPlex { get; set; }
+    [Required(ErrorMessage = "Copied To Plex is required.")]
+    public bool? CopiedToPlex { get; set; }
     [StringLength(25, ErrorMessage = "Notes cannot exceed 25 characters.")]
     public string? Notes { get; set; }
 }

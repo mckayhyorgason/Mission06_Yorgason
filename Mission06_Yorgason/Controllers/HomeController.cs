@@ -29,7 +29,7 @@ public class HomeController : Controller
     {
         ViewBag.Categories = _context.Categories.ToList();
         
-        return View();
+        return View("MovieForm", new MovieInfo());
     }
 
     [HttpPost]
