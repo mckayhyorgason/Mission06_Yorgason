@@ -150,3 +150,73 @@ body {
   background-color: #0055aa;
   transform: translateY(-2px);
 }
+
+/* ============================= */
+/* Movie Table Page */
+/* ============================= */
+
+/* Page Title */ 
+.movie_title {
+  text-align: center;
+  margin: 30px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* Table Container */
+.movie_list {
+  width: 95%;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.movie_list thead {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.movie_list thead td {
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Rows */
+.movie_list tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.movie_list tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.movie_list tbody tr:hover {
+  background-color: #e9f7fa;
+}
+
+/* Cells */
+.movie_list td {
+  padding: 10px 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Buttons */
+.movie_list .btn {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.movie_list .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
